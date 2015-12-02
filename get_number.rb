@@ -1,7 +1,7 @@
 # Get My Number Game
-# Written by: Martin Liu martin@aws-faq.com
+# Written by: Martin Liu, martin@aws-faq.com
 
-puts "Welcome to 'Get My Number!'"
+puts "Welcome to 'Guess My Number!'"
 
 # get the player's name, and greet them.
 print "What's your name? "
@@ -20,7 +20,7 @@ num_guesses = 0
 # Track whether the player has guessed correctly.
 guessed_it = false
 
-while num_guesses < 10 && guessed_it == false
+until num_guesses == 10 || guessed_it
 
 puts "You've got #{10 - num_guesses} guesses left."
 print "Make a guess: "
